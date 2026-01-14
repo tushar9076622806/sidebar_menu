@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one  i{
+  color: grey;
+  font-size: 30px;
+  position: absolute;
+  left: 20px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.sidebar{
+   height: 100vh;
+    width: 300px;
+   background-color: rgba(255, 255, 255, .01);
+   position: fixed;
+   box-shadow: 0 0 8px rgba(255, 255, 255, .5);
+   left: -300px;
+       transition: all 0.3s linear;
+
+}
+.sidebar .logo{
+    height: 60px;
+  
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, .5);
+    width: 100%;
+}
+.sidebar .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    line-height: 60px;
+    font-weight: 400;
+    left: 50px;
+
+}
+
+.sidebar .btn_two i{
+    color:grey;
+    position: absolute;
+    left: 270px;
+    font-size: 28px;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sidebar .menu{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+
+}
+.sidebar .menu li {
+  margin: 6px;
+  padding: 15px 25px;
+
+}
+.sidebar .menu a,i{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebar .menu i{
+    padding-right: 8px;
+}
+.sidebar .social_media {
+   color: white;
+   position: absolute;
+   bottom: 50px;
+   left: 25%;
+
+}
+.sidebar .social_media a{
+    color: white;
+    padding: 0 2.5px;
+    
+}
+.sidebar .social_media a,i:hover{
+     transform: scale(1.5);
+            transition: all 0.3s linear;
+
+}
+#check
+{
+    display: none;
+}
+
+.btn_one i:hover{
+    font-size:28px;
+    cursor: pointer;
+    color: rgb(72, 57, 235);
+        transition: all 0.2s linear;
+
+}
+.btn_two i:hover{
+    font-size:25px;
+    cursor: pointer;
+    color: rgb(254, 138, 141);
+    transition: all 0.2s linear;
+}
+.sidebar .menu li:hover{
+            box-shadow: 0 0 8px rgba(255, 255, 255, .5);
+
+}
+
+
+
+
+
+#check:checked~.sidebar{
+    left: 0px;
+}
+#check:checked~.btn_one{
+    opacity: 0;
+}
